@@ -1,5 +1,6 @@
 module "servers" {
-  source = "../modules/servers"
+  source = "app.terraform.io/Opsschool-Israel_H/servers/aws"
+  version = "1.0.0"
   web_instance_type = var.web_instance_type
   aws_region = var.aws_region
   db_instance_type = var.db_instance_type

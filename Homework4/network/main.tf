@@ -1,5 +1,6 @@
 module "network" {
-  source = "../modules/network"
+  source = "app.terraform.io/Opsschool-Israel_H/network/aws"
+  version = "1.0.0"
   vpc_cidr_block = var.vpc_cidr_block
   aws_region = var.aws_region
   az_1 = var.az_1
