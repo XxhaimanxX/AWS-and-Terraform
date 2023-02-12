@@ -7,5 +7,5 @@ module "servers" {
   image_id = var.image_id
   key_pair = var.key_pair
   s3_logs_bucket = var.s3_logs_bucket
-  user_data = var.user_data
+  user_data = file("install_nginx.sh")
 }
